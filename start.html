@@ -21,7 +21,8 @@
         function updateClock() {
                     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursdat', 'Friday', 'Saturday'];
                     var m = new Date();
-                    var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " " + ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " " + (days[m.getDay()]);
+                    var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " . "
+                      + ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " . " + (days[m.getDay()]);
                     document.getElementById('time').innerHTML = dateString;
                     setTimeout(updateClock, 1000);
                 }
@@ -38,7 +39,8 @@
         <div class="card-content">
           <h5>スタート</h5>
           <div class="row">
-            <div class="col s3">
+
+            <div class="col s6">
               <ul>
                 <li><a href="http://alliantcreditunion.com/">Alliant</a></li>
                 <li><a href="https://www.chase.com/">Chase</a></li>
@@ -50,7 +52,7 @@
               </ul>
             </div>
 
-            <div class="col s3">
+            <div class="col s6">
               <ul>
                 <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
                 <li><a href="https://sukebei.nyaa.si/?f=0&c=0_0&q=">Sukebei</a></li>
@@ -59,26 +61,6 @@
                 <li><a href="https://nhentai.net/">nhentai</a></li>
                 <li><a href="https://onejav.com/">OneJAV</a></li>
                 <li><a href="http://www.javlibrary.com/en/">JAVLibrary</a></li>
-              </ul>
-            </div>
-
-            <div class="col s3">
-              <ul>
-                <li><a href="https://www.4chan.org/a/catalog">/a/nimu & mangos</a></li>
-                <li><a href="https://www.4chan.org/g/catalog">techno/g/y</a></li>
-                <li><a href="https://www.4chan.org/trv/catalog">/trv/el</a></li>
-                <li><a href="https://www.4chan.org/w/catalog">/w/allpaper</a></li>
-                <li><a href="https://www.4chan.org/wg/catalog">/wg/eneral wallpaper</a></li>
-              </ul>
-            </div>
-
-            <div class="col s3">
-              <ul>
-                <li><a href="https://www.reddit.com/r/blazbluextagbattle/">BlazBlue CTB</a></li>
-                <li><a href="https://www.reddit.com/r/tekken/">Tekken</a></li>
-                <li><a href="https://www.reddit.com/r/outlier/">Outlier</a></li>
-                <li><a href="https://www.reddit.com/r/frugalmalefashion/">FrugalMaleFashion</a></li>
-                <li><a href="https://www.reddit.com/r/malefashionadvice/">MaleFashionAdvice</a></li>
               </ul>
             </div>
 
