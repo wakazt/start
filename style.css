@@ -25,7 +25,7 @@ a:hover {
 }
 
 .main {
-    width: 40%;
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,4 +42,8 @@ a:hover {
 
 .waifu {
     height: 300px;
+}
+
+.favorites {
+  padding-left: 5%;
 }
