@@ -19,15 +19,15 @@
     <div class="time" id="time">
       <script>
         function updateClock() {
-                    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursdat', 'Friday', 'Saturday'];
-                    var m = new Date();
-                    var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " . "
-                      + ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " . " + (days[m.getDay()]);
-                    document.getElementById('time').innerHTML = dateString;
-                    setTimeout(updateClock, 1000);
-                }
-                updateClock();
-            </script>
+          var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursdat', 'Friday', 'Saturday'];
+          var m = new Date();
+          var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " . " +
+            ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " . " + (days[m.getDay()]);
+          document.getElementById('time').innerHTML = dateString;
+          setTimeout(updateClock, 1000);
+        }
+        updateClock();
+      </script>
     </div>
     <div class="card horizontal">
 
@@ -46,33 +46,40 @@
                   <li><a href="http://alliantcreditunion.com/">Alliant</a></li>
                   <li><a href="https://www.chase.com/">Chase</a></li>
                   <li><a href="https://www.gmail.com/">Gmail</a></li>
-                  <li><a href="https://tweetdeck.twitter.com/">Twitter</a></li>
-                  <li><a href="https://feedly.com/">Feedly</a></li>
-                  <li><a href="https://www.facebook.com/">Facebook</a></li>
-                  <li><a href="https://www.reddit.com/">reddit</a></li>
+                  <li><a href="https://www.tdameritrade.com/tools-and-platforms/thinkorswim/features.page">thinkorswim</a></li>
+                  <li><a href="https://www.schwab.com/public/schwab/client_home">Schwab</a></li>
+                  <li><a href="https://www.paypal.com/us/home">Paypal</a></li>
                 </ul>
               </div>
 
               <div class="col s5">
                 <ul>
-                  <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
-                  <li><a href="https://sukebei.nyaa.si/?f=0&c=0_0&q=">Sukebei</a></li>
-                  <li><a href="http://hikarinoakariost.info/">HikariNoOST</a></li>
-                  <li><a href="https://hulkpop.com/">HulKPop</a></li>
-                  <li><a href="https://onejav.com/">OneJAV</a></li>
-                  <li><a href="http://www.javlibrary.com/en/">JAVLibrary</a></li>
+                  <li><a href="https://tweetdeck.twitter.com/">Twitter</a></li>
+                  <li><a href="https://www.reddit.com/">reddit</a></li>
+                  <li><a href="https://feedly.com/">Feedly</a></li>
+                  <li><a href="https://www.facebook.com/">Facebook</a></li>
+                  <li><a href="https://www.youtube.com/">YouTube</a></li>
                 </ul>
               </div>
             </div>
 
+            <div class="col s5">
+              <ul>
+                <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
+                <li><a href="http://hikarinoakariost.info/">HikariNoOST</a></li>
+                <li><a href="https://hulkpop.com/">HulKPop</a></li>
+                <li><a href="https://onejav.com/">OneJAV</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id='searchcontainer'>
-      <input id='search' placeholder="Search" type="text" autofocus></input>
-    </div>
+  <div id='searchcontainer'>
+    <input id='search' placeholder="Search" type="text" autofocus></input>
+  </div>
 
   </div>
 </body>
