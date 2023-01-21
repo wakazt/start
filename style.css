@@ -8,7 +8,7 @@ body {
   font-size: 14px;
   color: #ffffff;
   margin: 40px auto;
-  background-color: #151e26;
+  background-color: #93a8ac;
   background-image: url("images/");
   background-position: center top;
 }
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .card-stacked {
-  background-color: #131313;
+  background-color: #424b54;
 }
 
 .waifu {

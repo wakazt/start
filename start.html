@@ -31,7 +31,17 @@
     <div class="card horizontal">
 
       <div class="card-image">
-        <img class="waifu" src="images/wotaku.png">
+        <img id="waifu" class="waifu" src="images/wotaku.png">
+        <script language="javascript" type="text/javascript">
+          function IUSwitcher() {
+            var months = new Array('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december');
+            var d = new Date();
+            var m = d.getMonth();
+            var IU_src = "images/IU Monthly Switcher/IU_" + months[m] + ".png";
+            document.getElementById("waifu").src = IU_src;
+          }
+          IUSwitcher()
+        </script>
       </div>
 
       <div class="card-stacked">
@@ -55,7 +65,7 @@
                   <li><a href="https://www.gmail.com/">Gmail</a></li>
                   <li><a href="https://tweetdeck.twitter.com/">Twitter</a></li>
                   <li><a href="https://www.reddit.com/">reddit</a></li>
-                  <li><a href="https://www.mangahere.cc/bookmark/?sort=last_chapter">MangaHere</a></li>
+                  <li><a href="https://www.4chan.org/">4chan</a></li>
                   <li><a href="https://www.twitch.tv/">Twitch</a></li>
                   <li><a href="https://www.youtube.com/">YouTube</a></li>
                 </ul>
@@ -64,7 +74,8 @@
               <div class="col s4">
                 <ul>
                   <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
-                    <li><a href="https://subsplease.org//">SubsPlease</a></li>
+                  <li><a href="https://www.mangahere.cc/bookmark/?sort=last_chapter">MangaHere</a></li>
+                  <li><a href="https://subsplease.org//">SubsPlease</a></li>
                   <li><a href="http://hikarinoakariost.info/">HikariNoOST</a></li>
                   <li><a href="https://kpopjjang.com/">KPOPJJANG</a></li>
                   <li><a href="https://onejav.com/">OneJAV</a></li>
