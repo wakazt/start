@@ -15,40 +15,17 @@
 
 <body>
   <div class="main">
-    <div id="time">
-      <script>
-        function updateClock() {
-          var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-          var m = new Date();
-          var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " . " +
-            ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " . " + (days[m.getDay()]);
-          document.getElementById('time').innerHTML = dateString;
-          setTimeout(updateClock, 1000);
-        }
-        updateClock();
-      </script>
-    </div>
-    <div class="card horizontal">
+    <div id="time"></div>
 
+    <div class="card horizontal">
       <div class="card-image">
         <img id="waifu" class="waifu" src="images/wotaku.png">
-        <script language="javascript" type="text/javascript">
-          function IUSwitcher() {
-            var months = new Array('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december');
-            var d = new Date();
-            var m = d.getMonth();
-            var IU_src = "images/IU Monthly Switcher/IU_" + months[m] + ".png";
-            document.getElementById("waifu").src = IU_src;
-          }
-          IUSwitcher()
-        </script>
       </div>
 
-      <div class="card-stacked">
+      <div id="bookmarks" class="card-stacked">
         <div class="card-content">
           <h5>Main</h5>
           <div class="row">
-
             <div class="favorites">
               <div class="col s4">
                 <ul>
@@ -75,7 +52,7 @@
                 <ul>
                   <li><a href="https://subsplease.org//">SubsPlease</a></li>
                   <li><a href="https://www.mangahere.cc/bookmark/?sort=last_chapter">MangaHere</a></li>
-                    <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
+                  <li><a href="http://www.nyaa.si/?cats=1_37">NyaaTorrents</a></li>
                   <li><a href="http://hikarinoakariost.info/">HikariNoOST</a></li>
                   <li><a href="https://kpopjjang.com/">KPOPJJANG</a></li>
                   <li><a href="https://onejav.com/">OneJAV</a></li>
@@ -86,8 +63,92 @@
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
+
+  <script language="javascript" type="text/javascript">
+    function updateClock() {
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var m = new Date();
+      var dateString = ("0" + m.getHours()).slice(-2) + ":" + ("0" + m.getMinutes()).slice(-2) + ":" + ("0" + m.getSeconds()).slice(-2) + " . " +
+        ("0" + (m.getMonth() + 1)).slice(-2) + "/" + ("0" + m.getDate()).slice(-2) + "/" + m.getFullYear() + " . " + (days[m.getDay()]);
+      document.getElementById('time').innerHTML = dateString;
+      setTimeout(updateClock, 1000);
+    }
+
+    function IUSwitcher() {
+      var months = new Array('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december');
+      var d = new Date();
+      var m = d.getMonth();
+      var IU_src = "images/IU Monthly Switcher/IU_" + months[m] + ".png";
+      document.getElementById("waifu").src = IU_src;
+    }
+
+    function colorSwitcher() {
+      var months = new Array('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december');
+      var d = new Date();
+      var m = d.getMonth();
+      switch (months[m]) {
+        case 'january':
+          document.body.style.color = '#ffffff';
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'february':
+          document.body.style.backgroundColor = '#364652';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'march':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'april':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'may':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'june':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'july':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'august':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'september':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'october':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'november':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        case 'december':
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          break;
+        default:
+          document.body.style.backgroundColor = '#f5f5f5';
+          document.getElementById("bookmarks").backgroundColor = '#757575';
+      }
+    }
+
+    updateClock();
+    IUSwitcher();
+  </script>
 
 </body>
 
