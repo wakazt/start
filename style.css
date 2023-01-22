@@ -6,15 +6,16 @@
 body {
   font-family: "Font";
   font-size: 14px;
-  color: #ffffff;
+  color: #090909;
   margin: 40px auto;
-  background-color: #93a8ac;
+  background-color: #F5F5F5;
   background-image: url("images/");
   background-position: center top;
 }
 
 h5 {
   font-size: 35px;
+  color: #ffffff;
 }
 
 a {
@@ -34,7 +35,7 @@ a:hover {
 }
 
 .card-stacked {
-  background-color: #424b54;
+  background-color: #757575;
 }
 
 .waifu {
