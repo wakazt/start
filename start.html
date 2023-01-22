@@ -15,18 +15,25 @@
 
 <body>
   <div class="main">
+
     <div id="time"></div>
 
     <div class="card horizontal">
+
       <div class="card-image">
         <img id="waifu" class="waifu" src="images/wotaku.png">
       </div>
 
       <div id="bookmarks" class="card-stacked">
+
         <div class="card-content">
+
           <h5>Main</h5>
+
           <div class="row">
+
             <div class="favorites">
+
               <div class="col s4">
                 <ul>
                   <li><a href="http://alliantcreditunion.com/">Alliant</a></li>
@@ -58,10 +65,13 @@
                   <li><a href="https://onejav.com/">OneJAV</a></li>
                 </ul>
               </div>
+
             </div>
 
           </div>
+
         </div>
+
       </div>
 
     </div>
@@ -92,62 +102,43 @@
       var m = d.getMonth();
       switch (months[m]) {
         case 'january':
+        case 'may':
+        case 'june':
+        case 'august':
           document.body.style.color = '#ffffff';
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          document.body.style.backgroundColor = '#364652';
+          document.getElementById("bookmarks").style.backgroundColor = '#424b54';
           break;
         case 'february':
-          document.body.style.backgroundColor = '#364652';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
+        case 'april':
+          document.body.style.backgroundColor = '#D2835B';
+          document.getElementById("bookmarks").style.backgroundColor = '#AB947E';
           break;
         case 'march':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
-        case 'april':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
-        case 'may':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
-        case 'june':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          document.body.style.backgroundColor = '#9AC791';
+          document.getElementById("bookmarks").style.backgroundColor = '#424B54';
           break;
         case 'july':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
-        case 'august':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
         case 'september':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
         case 'october':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          document.body.style.backgroundColor = '#d5869d';
+          document.getElementById("bookmarks").style.backgroundColor = '#494850';
           break;
         case 'november':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
+          document.body.style.backgroundColor = '#9C9381';
+          document.getElementById("bookmarks").style.backgroundColor = '#393E41';
           break;
         case 'december':
-          document.body.style.backgroundColor = '#93a8ac';
-          document.getElementById("bookmarks").backgroundColor = '#424b54';
-          break;
         default:
-          document.body.style.backgroundColor = '#f5f5f5';
-          document.getElementById("bookmarks").backgroundColor = '#757575';
+          document.body.style.backgroundColor = '#93a8ac';
+          document.getElementById("bookmarks").style.backgroundColor = '#424b54';
+          break;
       }
     }
 
     updateClock();
     IUSwitcher();
+    colorSwitcher();
   </script>
 
 </body>
