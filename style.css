@@ -38,7 +38,9 @@ a:hover {
   background-color: #757575;
 }
 
-.waifu {}
+.waifu {
+  height: 350px;
+}
 
 .favorites {
   padding-left: 5%;
